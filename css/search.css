@@ -1,0 +1,199 @@
+a {
+    background-color: transparent;
+    text-decoration: none;
+    -webkit-text-decoration-skip: objects
+  }
+
+  a:active,
+  a:hover {
+    outline-width: 0
+  }
+
+
+
+  /* Google */
+  #nav_translate,
+  #nav_search {
+    display: none;
+  }
+
+  #nav_translate a {
+    display: inline;
+  }
+
+  #googleSearch {
+    color: #000000;
+  }
+
+  .searchdiv {
+    max-width: 400px;
+    margin: auto;
+    text-align: left;
+    font-size: 16px;
+  }
+
+  div.cse .gsc-control-cse,
+  div.gsc-control-cse {
+    background-color: transparent;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  td.gsc-search-button input.gsc-search-button {
+    background-color: #555555;
+    border-color: #555555;
+  }
+
+  input.gsc-input,
+  .gsc-input-box,
+  .gsc-input-box-hover,
+  .gsc-input-box-focus,
+  .gsc-search-button {
+    box-sizing: content-box;
+    line-height: normal;
+  }
+
+  .gsc-tabsArea div {
+    overflow: visible;
+  }
+
+  .gsst_a .gscb_a {
+    margin-top: 3px;
+  }
+
+  /* Customize W3.CSS */
+  #nav_tutorials,
+  #nav_references,
+  #nav_examples,
+  #nav_exercises {
+    display: none;
+    padding-bottom: 40px;
+    position: absolute;
+    width: 100%;
+    z-index: 5 !important;
+  }
+
+  .w3-col .w3-button {
+    margin: 5px 5px 5px 0;
+    font-size: 16px;
+  }
+
+  .w3-col.l4 .w3-card-2 {
+    padding: 15px 10px;
+    height: 260px;
+  }
+
+  .w3-theme {
+    color: #fff !important;
+    background-color: #4CAF50 !important;
+  }
+
+  .w3-main {
+    margin-left: 230px;
+  }
+
+  .w3-sidebar {
+    z-index: 3;
+    width: 230px;
+    overflow: hidden !important;
+    position: absolute !important;
+    margin-bottom: -155px;
+  }
+
+  .w3-sidebar .w3-bar-block .w3-bar-item {
+    padding: 0 16px;
+    font-size: 16px;
+  }
+
+  .w3-bar {
+    position: relative;
+    z-index: 4;
+    font-size: 17px;
+  }
+
+  .w3-bar {
+    width: 100%;
+    overflow: hidden
+  }
+
+  .w3-center .w3-bar {
+    display: inline-block;
+    width: auto
+  }
+
+  .w3-bar .w3-bar-item {
+    padding: 8px 16px;
+    float: left;
+    background-color: inherit;
+    color: inherit;
+    width: auto;
+    border: none;
+    outline: none;
+    display: block
+  }
+
+  .w3-bar .w3-dropdown-hover,
+  .w3-bar .w3-dropdown-click {
+    position: static;
+    float: left
+  }
+
+  .w3-bar .w3-button {
+    background-color: inherit;
+    color: inherit;
+    white-space: normal
+  }
+
+  .w3-bar-block .w3-bar-item {
+    width: 100%;
+    display: block;
+    padding: 8px 16px;
+    text-align: left;
+    background-color: inherit;
+    color: inherit;
+    border: none;
+    outline: none;
+    white-space: normal
+  }
+
+  .w3-bar-block.w3-center .w3-bar-item {
+    text-align: center
+  }
+
+  .w3-padding-16 {
+    padding-top: 16px !important;
+    padding-bottom: 16px !important
+  }
+
+  .w3-hover-white:hover {
+    color: #000 !important;
+    background-color: #fff !important
+  }
+
+
+
+
+  .w3-wide {
+    font-family: "Segoe UI", Arial, sans-serif
+  }
+
+
+
+  .w3-serif {
+    font-family: "Times New Roman", Times, serif
+  }
+
+
+
+  .w3-wide {
+    letter-spacing: 4px
+  }
+
+  .w3-right {
+    float: right !important
+  }
+
+  .w3-right img {
+    width: 18px;
+  }

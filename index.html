@@ -11,6 +11,8 @@
   <meta name="author" content="jamal elkhdadi">
   <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/search.css">
   <!-- Custom fonts for this template -->
   <link href="css/all.css" rel="stylesheet" type="text/css">
   <!-- Custom styles for this template -->
@@ -111,20 +113,37 @@
           <button id="sidebarToggleTop" class="rounded-circle border-0 bg-dark text-white">
             <i class="fas fa-bars"></i>
           </button>
-          <!--search-->
-          <div class="well">
-            <form method="get" class="input-group" style="left: 13px;" name="searchform"
-              action="https://www.google.com/search" target="_top" novalidate="">
-              <script async src="cse.google.js"></script>
-              <input type="hidden" name="sitesearch" value="www.google.com" class="form-control">
-              <input class="form-control" type="text" id="search-string" name="q" placeholder="Search..."
-                onfocus="if (this.value == 'Search your favorite tutorials...') {this.value = '';}"
-                onblur="if (this.value == '') {this.value = 'Search your favorite tutorials...';}" autocomplete="off">
-              <button class="btn btn-primary">
-                <i class="fa fa-search"></i>
-              </button>
-            </form>
+          <script>
+            (function () {
+              var cx = '012971019331610648934:m2tou3_miwy';
+              var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
+              gcse.src = 'https://www.google.com/cse/cse.js?cx=' + cx;
+              var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
+            })();
+            (function (i, s, o, g, r, a, m) {
+              i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+              }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+            ga('create', 'UA-3855518-1', 'auto');
+            ga('require', 'displayfeatures');
+            ga('send', 'pageview');
+          </script>
+          <div
+            style='display:none;position:absolute;z-index:6;right:60px;height:30px;padding-top:12px;padding-right:20px;background-color:#4CAF50;'
+            id='googleSearch'>
+            <div class='gcse-search'></div>
           </div>
+          <div
+            style='display:none;position:absolute;z-index:5;right:120px;height:30px;background-color:#4CAF50;text-align:right;padding-top:15px;'
+            id='google_translate_element'>
+          </div>
+
+          <a class="w3-bar-item w3-button barex w3-hover-white w3-padding-16" href="javascript:void(0)"
+            onclick="w3_open_nav('tutorials')" id="navbtn_tutorials">
+
+          </a>
           <!-- Topbar Navbar -->
           <ul class="navbar-nav ml-auto">
             <li class="nav-item dropdown no-arrow mx-1">
@@ -187,6 +206,60 @@
                   <span class="font-weight-bold">Logout</span>
                 </a>
               </div>
+            </li>
+            <li class="nav-item dropdown no-arrow mx-1">
+              <!--search-->
+              <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 w3-right" href="javascript:void(0)"
+                onclick="open_search(this)" title='Search W3Schools'><img src="svg/search.svg"></a>
+              <a class="w3-bar-item w3-button w3-hover-white w3-padding-16 w3-right" href="javascript:void(0)"
+                onclick="open_translate(this)" title='Translate W3Schools'><img src="svg/translate.svg"></a>
+              <script>
+                function open_translate(elmnt) {
+                  var a = document.getElementById("google_translate_element");
+                  if (a.style.display == "") {
+                    a.style.display = "none";
+                    elmnt.innerHTML = "<img src='svg/translate.svg'>";
+                  } else {
+                    a.style.display = "";
+                    if (window.innerWidth > 830) {
+                      a.style.width = "20%";
+                    } else {
+                      a.style.width = "60%";
+                    }
+                    elmnt.innerHTML = "<span style='font-family:verdana;font-weight:bold;display:inline-block;width:21px;text-align:center;'>X</span>";
+                  }
+                }
+                function open_search(elmnt) {
+                  var a = document.getElementById("googleSearch");
+                  document.getElementById("navbtn_tutorials").style.visibility = "visible";
+                  if (a.style.display == "") {
+                    a.style.display = "none";
+                    elmnt.innerHTML = "<img src='svg/search.svg'>";
+                  } else {
+                    a.style.display = "";
+                    if (window.innerWidth > 1000) {
+                      a.style.width = "40%";
+                    } else if (window.innerWidth > 768) {
+                      document.getElementById("navbtn_tutorials").style.visibility = "hidden";
+                      a.style.width = "80%";
+                    } else {
+                      a.style.width = "80%";
+                    }
+                    if (document.getElementById("gsc-i-id1")) { document.getElementById("gsc-i-id1").focus(); }
+                    elmnt.innerHTML = "<span style='font-family:verdana;font-weight:bold;display:inline-block;width:23px;text-align:center;'>X</span>";
+                  }
+                }
+                function googleTranslateElementInit() {
+                  new google.translate.TranslateElement({
+                    pageLanguage: 'en',
+                    autoDisplay: false,
+                    gaTrack: true,
+                    gaId: 'UA-3855518-1',
+                    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+                  }, 'google_translate_element');
+                }
+              </script>
+              <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
             </li>
           </ul>
         </nav>
