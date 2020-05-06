@@ -1,0 +1,38 @@
+<html lang="en">
+
+<head>
+    <title>login Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+</head>
+
+<body>
+
+
+
+    <script>
+        function validateForm() {
+            var x = document.forms["myForm"]["pass"].value;
+            if (x == "jamal1234") {
+                document.getElementById("demo").innerHTML = "<a	href='admin/index.html'>GET STARTED</a>";
+                return false;
+            }
+        }
+    </script>
+    <p id="demo"></p>
+    <form name="myForm" action="" onsubmit="return validateForm()" method="post">
+        Name:
+        <input type="text" name="pass">
+        <input type="submit" value="Submit">
+    </form>
+
+
+
+
+
+
+</body>
+
+</html>

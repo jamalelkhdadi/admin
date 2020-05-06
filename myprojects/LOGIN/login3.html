@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function confirmInput() {
+            var x = document.forms[0].x.value;
+            if (x == "jamal") {
+                alert("Hello " + fname + "! You will now be redirected to www.w3Schools.com");
+                return false;
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+
+    <form onsubmit="confirmInput()" action="https://www.w3schools.com/">
+        Enter your name: <input id="x" type="text" size="20">
+        <input type="submit">
+    </form>
+
+</body>
+
+</html>
