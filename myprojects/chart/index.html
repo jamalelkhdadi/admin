@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Angularchart Example</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <script src="js/angular.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div ng-app="AngularChartExample">
+        <script src="js/highcharts.js"></script>
+        <script src="js/chart.js"></script>
+        <script src="js/data.js"></script>
+        <div ng-view></div>
+    </div>
+
+    <div class="jumbotron text-center" style="margin-bottom:0">
+        W3Schools is optimized for learning, testing, and training. Examples might be simplified to improve reading and
+        basic understanding. Tutorials, references, and examples are constantly reviewed to avoid errors, but we cannot
+        warrant full correctness of all content. While using this site, you agree to have read and accepted our terms of
+        use, cookie and privacy policy. Copyright 1999-2020 by Refsnes Data. All Rights Reserved.
+        Powered by W3.CSS.
+    </div>
+
+
+</body>
+
+</html>

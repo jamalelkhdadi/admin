@@ -27,6 +27,29 @@ function InstantSearchController($scope) {
     // tips on using AJAX.
     $scope.items = [
         {
+            url: 'myprojects/ag-grid/index.html',
+            title: 'ag-grid',
+            description: 'ag-grid',
+            image: 'svg/ag-grid.svg'
+        },
+        {
+            url: 'myprojects/Animation-cub/index.html',
+            title: 'animation',
+            description: 'Animation cub',
+            image: 'svg/animationcub.jpg'
+        },
+        {
+            url: 'myprojects/chart/index.html',
+            title: 'chart',
+            description: 'charts'
+        },
+        {
+            url: 'myprojects/emperes/index.html',
+            title: 'Emperes',
+            description: 'Play Emperes',
+            image: 'svg/emperes.png'
+        },
+        {
             url: 'myprojects/gameFOOT/index.html',
             title: 'Football',
             description: 'Play game foot',
@@ -39,6 +62,18 @@ function InstantSearchController($scope) {
             image: 'svg/git.svg'
         },
         {
+            url: 'myprojects/LOGIN/login.html',
+            title: 'LOGIN',
+            description: 'Page login',
+            image: 'svg/login.svg'
+        },
+        {
+            url: 'myprojects/player/responsivesinglplayer.html',
+            title: 'player',
+            description: 'responsive singl player and 2 players',
+            image: 'svg/player.svg'
+        },
+        {
             url: 'myprojects/playerMP3/index.html',
             title: 'MP3 player',
             description: 'Play music mp3',
@@ -49,42 +84,6 @@ function InstantSearchController($scope) {
             title: 'Sketch pad',
             description: 'Sketch Pad',
             image: 'svg/sketchpad.jpg'
-        },
-        {
-            url: 'myprojects/emperes/index.html',
-            title: 'Emperes',
-            description: 'Play Emperes',
-            image: 'svg/emperes.png'
-        },
-        {
-            url: 'python/index.html',
-            title: 'Python',
-            description: 'Learn python',
-            image: 'svg/python.svg'
-        },
-        {
-            url: 'myprojects/ag-grid/index.html',
-            title: 'ag-grid',
-            description: 'ag-grid',
-            image: 'svg/ag-grid.svg'
-        },
-        {
-            url: 'html/index.html',
-            title: 'HTML',
-            description: 'Learn html',
-            image: 'svg/html.svg'
-        },
-        {
-            url: 'myprojects/player/responsivesinglplayer.html',
-            title: 'player',
-            description: 'responsive singl player and 2 players',
-            image: 'svg/player.svg'
-        },
-        {
-            url: 'html5/index.html',
-            title: 'HTML5',
-            description: 'Learn html5',
-            image: 'svg/html-5.svg'
         }
     ];
 }
